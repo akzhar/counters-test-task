@@ -1,0 +1,45 @@
+@import "./consts/const.styl"
+@import "./mixin.styl"
+
+@font-face
+  font-family 'Proxima Nova '
+  font-display swap
+  src: url('./assets/fonts/Proxima Nova.woff2') format('woff2'),
+      url('./assets/fonts/Proxima Nova.woff') format('woff')
+
+html, body
+  margin 0
+  font-family 'Proxima Nova', Arial, sans-serif
+  font-weight 400
+  font-size 16px
+  line-height 20px
+  color black
+
+img
+  max-width 100%
+
+.visually-hidden
+  hide()
+
+.button
+  border none
+  padding 10px 20px
+  border-radius 4px
+  background-color app_color_blue
+  text-transform uppercase
+  color white
+  white-space nowrap
+
+  &:hover
+    opacity 0.8
+
+  &:active
+    transform translateY(2px)
+    opacity 0.6
+    transition 0s
+
+@import "./components/Layout/Layout.styl"
+@import "./components/Statistics/Statistics.styl"
+@import "./components/NewCounterButton/NewCounterButton.styl"
+@import "./components/Counters/Counters.styl"
+@import "./components/Counter/Counter.styl"

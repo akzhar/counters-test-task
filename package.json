@@ -1,0 +1,53 @@
+{
+  "name": "counters-test-task",
+  "version": "1.0.0",
+  "private": true,
+  "author": "akzhar.taov@yandex.ru",
+  "description": "counters test task",
+  "scripts": {
+    "eslint": "eslint --ext .tsx --ext .ts src/",
+    "test": "npm run eslint",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server"
+  },
+  "engines": {
+    "node": "14.18.0",
+    "npm": "6.14.15"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.17",
+    "@babel/preset-env": "7.12.13",
+    "@babel/preset-typescript": "7.15.0",
+    "@types/react": "17.0.27",
+    "@types/react-dom": "17.0.9",
+    "@types/react-redux": "7.1.19",
+    "@typescript-eslint/eslint-plugin": "4.33.0",
+    "@typescript-eslint/parser": "4.33.0",
+    "babel-loader": "8.2.2",
+    "css-loader": "5.0.2",
+    "eslint": "7.18.0",
+    "eslint-plugin-import": "2.24.2",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "file-loader": "6.2.0",
+    "mini-css-extract-plugin": "1.3.9",
+    "style-loader": "2.0.0",
+    "stylus": "0.54.8",
+    "stylus-loader": "4.3.3",
+    "ts-loader": "9.2.6",
+    "tsconfig-paths-webpack-plugin": "3.5.1",
+    "webpack": "5.40.0",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.11.2"
+  },
+  "dependencies": {
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "react-redux": "7.2.2",
+    "redux": "4.0.5",
+    "redux-devtools-extension": "2.13.9",
+    "redux-thunk": "2.3.0",
+    "typescript": "4.4.3"
+  }
+}

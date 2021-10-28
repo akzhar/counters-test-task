@@ -1,0 +1,32 @@
+.counter
+  padding 10px
+  border-radius 2px
+  background-color white
+  shadow(app_color_gray)
+
+  &__data
+    display flex
+    align-items center
+    margin-bottom 10px
+
+    & output
+      flex-grow 2
+      padding 0 10px
+
+    & span
+      padding 0 0 0 10px
+
+  &__wrapper
+    display flex
+
+  &__button-increment
+    background-color app_color_green
+    margin-right 10px
+
+  &__button-decrement
+    background-color app_color_gray
+    margin-right 10px
+
+  &__button-remove
+    background-color app_color_red
+    margin-left auto

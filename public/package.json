@@ -1,0 +1,22 @@
+{
+  "name": "counters-test-task",
+  "version": "1.0.0",
+  "private": true,
+  "author": "akzhar.taov@yandex.ru",
+  "description": "counters test task",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "git add . && git commit -m \"heroku deploy\" && git push heroku master",
+    "logs": "heroku logs --tail",
+    "app-on": "heroku ps:scale web=1",
+    "app-off": "heroku ps:scale web=0"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "engines": {
+    "node": "14.18.0",
+    "npm": "6.14.15"
+  },
+  "devDependencies": {}
+}
